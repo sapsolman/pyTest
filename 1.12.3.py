@@ -1,9 +1,28 @@
-first = int(input())
-second = int(input())
-oper = str(input())
-#answer = str
-if second == 0 and oper == '/':
-    print('Деление на 0! повторите ввод')
+first = float(input('Введите первое число '))
+second = float(input('Введите второе число '))
+oper = input('Действие (+,-,*,/,**,//,%): ')
+if oper == '+':
+    print(first + second)
+elif oper == '-':
+    print(first - second)
+elif oper == '*':
+    print(first * second)
+elif oper == '/':
+    if second == 0:
+        print('Деление на 0!')
+    else:
+        print(first / second)
+elif oper == '%':
+    if second == 0:
+        print('Деление на 0!')
+    else:
+        print(first % second)
+elif oper == '//':
+    if second == 0:
+        print('Деление на 0!')
+    else:
+        print(first // second)
+elif oper == '**':
+    print(first ** second)
 else:
-    answer = first, oper, second
-    print(answer)
+    print('Введите допустимое действие')
