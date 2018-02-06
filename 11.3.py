@@ -12,17 +12,17 @@ elif oper == '/':
         print('Деление на 0!')
     else:
         print(first / second)
-elif oper == '%':
+elif oper == 'mod':
     if second == 0:
         print('Деление на 0!')
     else:
         print(first % second)
-elif oper == '//':
+elif oper == 'div':
     if second == 0:
         print('Деление на 0!')
     else:
         print(first // second)
-elif oper == '**':
+elif oper == 'pow':
     print(first ** second)
 else:
     print('Введите допустимое действие')
