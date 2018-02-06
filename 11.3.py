@@ -1,6 +1,6 @@
-first = float(input('Введите первое число '))
-second = float(input('Введите второе число '))
-oper = input('Действие (+,-,*,/,**,//,%): ')
+first = float(input())
+second = float(input())
+oper = input()
 if oper == '+':
     print(first + second)
 elif oper == '-':
