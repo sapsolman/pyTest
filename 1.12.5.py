@@ -1,19 +1,19 @@
-A = int(input())
-B = int(input())
-C = int(input())
-if A >= B and B >= C:
-    print(A)
-    print(C)
-    print(B)
-elif A >= B and A <= C:
-    print(C)
-    print(B)
-    print(A)
-elif A <= B and A <= C:
-    print(C)
-    print(A)
-    print(B)
-else:
-    print(B)
-    print(A)
-    print(C)
+a = int(input())
+b = int(input())
+c = int(input())
+if a >= b and b >= c:
+    print(a)
+    print(c)
+    print(b)
+elif a >= b and b <= c and a <= c:
+    print(c)
+    print(a)
+    print(b)
+elif a >= b and b <= c and a <= c:
+    print(a)
+    print(b)
+    print(c)
+elif a >= b and b <= c and a >= c:
+    print(c)
+    print(b)
+    print(a)
